@@ -3,10 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A simple Hello World page">
-    <title>Hello World</title>
+    <title>Expense Logging</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello, World!</h1>
+    <div class="container">
+        <h1>Log Your Expense</h1>
+        <form id="expense-form">
+            <div class="form-group">
+                <label for="expense-name">Expense Name</label>
+                <input type="text" id="expense-name" name="expense-name" placeholder="e.g., Coffee, Bus Ticket" required>
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" name="amount" placeholder="e.g., 5.50" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="category">Category</label>
+                <select id="category" name="category" required>
+                    <option value="food">Food</option>
+                    <option value="transportation">Transportation</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="utilities">Utilities</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <button type="submit" class="submit-btn">Log Expense</button>
+        </form>
+
+        <div id="message" class="message"></div>
+    </div>
+
+    <script>
+        // Basic form submission handler for logging the expense
+        document.getElementById('expense-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const expenseName = document.getElementById('expense-name').value;
+            const amount = document.getElementById('amount').value;
+            const category = document.getElementById('category').value;
+            const date = document.getElementById('date').value;
+
+            const message = `
+                <h3>Expense Logged Successfully!</h3>
+                <p><strong>Expense:</strong> ${expenseName}</p>
+                <p><strong>Amount:</strong> ${amount}</p>
+                <p><strong>Category:</strong> ${category}</p>
+                <p><strong>Date:</strong> ${date}</p>
+            `;
+
+            document.getElementById('message').innerHTML = message;
+            document.getElementById('expense-form').reset();
+        });
+    </script>
 </body>
 </html>
