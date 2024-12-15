@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Finance Tracker</title>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 	<!-- Header -->
@@ -19,7 +19,9 @@
             </ul>
         </nav>
     </header>
-    <div class="container">
+	
+	<!-- Log Expenses Section -->
+    <section id="log-expenses" class="container">
         <h1>Log Your Expense</h1>
         <form id="expense-form">
             <div class="form-group">
@@ -49,7 +51,18 @@
         </form>
 
         <div id="message" class="message"></div>
-    </div>
+    </section>
+	
+	<!-- Savings Goals Section -->
+    <section id="savings-goals">
+        <h2>Set Your Savings Goals</h2>
+        <form id="savings-form">
+            <input type="text" id="goal-name" placeholder="Goal Name" required>
+            <input type="number" id="goal-amount" placeholder="Goal Amount" required>
+            <button type="submit">Set Goal</button>
+        </form>
+        <div id="goal-progress"></div>
+    </section>
 
     <script>
         // Basic form submission handler for logging the expense
