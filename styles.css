@@ -86,7 +86,7 @@ input[type="date"],
 input[type="email"],
 input[type="password"],
 select {
-    width: 95%;
+    width: 97%;
     padding: 12px;
     margin: 5px 0;
     border: 1px solid #ccc;
@@ -107,21 +107,6 @@ button.submit-btn {
 }
 
 button.submit-btn:hover {
-    background-color: #45a049;
-}
-
-button.nav-btn {
-    padding: 4px;
-    background-color: #4CAF50;
-    color: white;
-    font-size: 13px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button.nav-btn:hover {
     background-color: #45a049;
 }
 

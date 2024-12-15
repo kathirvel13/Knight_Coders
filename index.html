@@ -55,11 +55,13 @@
 	
 	<!-- Savings Goals Section -->
     <section id="savings-goals">
-        <h2>Set Your Savings Goals</h2>
+        <h1>Set Your Savings Goals</h1>
         <form id="savings-form">
-            <input type="text" id="goal-name" placeholder="Goal Name" required>
-            <input type="number" id="goal-amount" placeholder="Goal Amount" required>
-            <button type="submit">Set Goal</button>
+            <label for="goal-name">Gaol Name</label>
+            <input type="text" id="goal-name" required>
+            <label for="goal-amount">Goal Amount</label>
+            <input type="number" id="goal-amount" required>
+            <button class="submit-btn" type="submit">Set Goal</button>
         </form>
         <div id="goal-progress"></div>
     </section>
