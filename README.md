@@ -53,11 +53,11 @@
 
 ## Screenshots
 
-![Screenshot 1](path/to/screenshot1.png)
-*Caption for the screenshot.*
+![Expense Tracker](/Screenshots/Expense%20Tracker.png)
+*Tracks your daily expenses.*
 
-![Screenshot 2](path/to/screenshot2.png)
-*Caption for the screenshot.*
+![Set Goals](/Screenshots/Goal%20Setter.png)
+*Set financial goals.*
 
 ---
 
@@ -75,7 +75,7 @@ We thank the following people for their contributions to this project:
 
 For any inquiries or feedback, reach out to:
 
-- **Your Name**: Kathirvel
+- **Name**: Kathirvel
 - **Email**: [24e120@psgitech.ac.in](mailto:24e120@psgitech.ac.in)
 - **GitHub**: [github.com/kathirvel13](https://github.com/kathirvel13)
 - **Website**: [kathirvel13.github.io/Knight_Coders/](https://kathirvel13.github.io/Knight_Coders/)
