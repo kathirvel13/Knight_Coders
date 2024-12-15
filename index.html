@@ -57,10 +57,14 @@
     <section id="savings-goals">
         <h1>Set Your Savings Goals</h1>
         <form id="savings-form">
-            <label for="goal-name">Gaol Name</label>
-            <input type="text" id="goal-name" required>
-            <label for="goal-amount">Goal Amount</label>
-            <input type="number" id="goal-amount" required>
+            <div class="form-group">
+                <label for="goal-name">Goal Name</label>
+                <input type="text" id="goal-name" required>
+            </div>
+            <div class="form-group">
+                <label for="goal-amount">Goal Amount</label>
+                <input type="number" id="goal-amount" required>
+            </div>
             <button class="submit-btn" type="submit">Set Goal</button>
         </form>
         <div id="goal-progress"></div>
