@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f9;
@@ -6,6 +7,7 @@ body {
     padding: 0;
 }
 
+/* Header Styles */
 header {
     background-color: #34495e;
     font-family: 'Open Sans', sans-serif;
@@ -21,6 +23,7 @@ header h1 {
     font-weight: 700;
 }
 
+/* Navigation Styles */
 nav ul {
     list-style: none;
     padding: 0;
@@ -40,6 +43,7 @@ nav ul li a {
     text-transform: uppercase;
 }
 
+/* Section Styles */
 section {
     padding: 40px 20px;
     margin: 20px 10px;
@@ -67,6 +71,7 @@ h1 {
     font-size: 24px;
 }
 
+/* Form Styles */
 form {
     display: flex;
     flex-direction: column;
@@ -97,6 +102,7 @@ select {
     background-color: #f9f9f9;
 }
 
+/* Button Styles */
 button.submit-btn {
     padding: 12px;
     background-color: #4CAF50;
@@ -112,6 +118,7 @@ button.submit-btn:hover {
     background-color: #45a049;
 }
 
+/* Message Box Styles */
 .message {
     margin-top: 20px;
     padding: 15px;
@@ -129,6 +136,7 @@ button.submit-btn:hover {
     color: #333;
 }
 
+/* Input Focus Styles */
 input[type="text"]:focus,
 input[type="number"]:focus,
 input[type="date"]:focus,

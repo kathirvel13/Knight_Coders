@@ -4,26 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Finance Tracker</title>
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="styles.css">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-	<!-- Header -->
+    <!-- Header -->
     <header>
         <h1>Personal Finance Tracker for Students</h1>
         <nav>
             <ul>
-                <li><a href="#log-expenses">Log Expenses</a></li>
-                <li><a href="#savings-goals">Savings Goals</a></li>
-				<li><a href="login">Log In</a></li>
-                <li><a href="register">Sign Up</a></li>
+                <li><a href="#log-expenses"><span class="material-icons">receipt_long</span> Log Expenses</a></li>
+                <li><a href="#savings-goals"><span class="material-icons">savings</span> Savings Goals</a></li>
+                <li><a href="login.html"><span class="material-icons">login</span> Log In</a></li>
+                <li><a href="register"><span class="material-icons">person_add</span> Sign Up</a></li>
             </ul>
         </nav>
     </header>
-	
-	<!-- Log Expenses Section -->
+    
+    <!-- Log Expenses Section -->
     <section id="log-expenses" class="container">
-        <h1>Log Your Expense</h1>
+        <h1><span class="material-icons">add_circle_outline</span> Log Your Expense</h1>
         <form id="expense-form">
             <div class="form-group">
                 <label for="expense-name">Expense Name</label>
@@ -48,15 +51,15 @@
                 <label for="date">Date</label>
                 <input type="date" id="date" name="date" required>
             </div>
-            <button type="submit" class="submit-btn">Log Expense</button>
+            <button type="submit" class="submit-btn"><span class="material-icons">check_circle</span> Log Expense</button>
         </form>
 
         <div id="message" class="message"></div>
     </section>
-	
-	<!-- Savings Goals Section -->
+    
+    <!-- Savings Goals Section -->
     <section id="savings-goals">
-        <h1>Set Your Savings Goals</h1>
+        <h1><span class="material-icons">star</span> Set Your Savings Goals</h1>
         <form id="savings-form">
             <div class="form-group">
                 <label for="goal-name">Goal Name</label>
@@ -66,7 +69,7 @@
                 <label for="goal-amount">Goal Amount</label>
                 <input type="number" id="goal-amount" required>
             </div>
-            <button class="submit-btn" type="submit">Set Goal</button>
+            <button class="submit-btn" type="submit"><span class="material-icons">done_all</span> Set Goal</button>
         </form>
         <div id="goal-progress"></div>
     </section>
